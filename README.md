@@ -34,3 +34,4 @@ if __name__ == "__main__":
     out_path = "./new_music"
     generate_songs(music_prompt, tags=tags, title=song_title, target_music_folder_path=out_path)
 ```
+
