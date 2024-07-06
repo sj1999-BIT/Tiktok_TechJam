@@ -41,12 +41,14 @@ def clear_folder(folder_path):
 
 def generate_songs(input_prompt, tags=None, title=None, make_instrumental=True, target_music_folder_path=None):
     """
+    Generates songs using the Suno API based on the given parameters and downloads them.
 
-    :param input_prompt:
-    :param tags:
-    :param Title:
-    :param make_instrumental:
-    :return:
+    :param input_prompt: str, The main prompt to guide the song generation.
+    :param tags: list or None, Optional tags to categorize or influence the song generation.
+    :param title: str or None, Optional title for the generated song.
+    :param make_instrumental: bool, Whether to generate an instrumental version (default is True).
+    :param target_music_folder_path: str or None, Optional path to save the downloaded songs.
+    :return: None
     """
 
     clips = client.generate(
@@ -72,14 +74,3 @@ def generate_songs(input_prompt, tags=None, title=None, make_instrumental=True, 
 
 
 
-def main():
-    music_prompt = "Hype music, 2 mins long, first min slow, last min increasingly fast"
-    tags =["electric", "jazz"]
-    song_title = ["first_try"]
-    out_path = "./new_music"
-    generate_songs(music_prompt, tags=tags, title=song_title, target_music_folder_path=out_path)
-
-
-
-if __name__ == "__main__":
-    main()
