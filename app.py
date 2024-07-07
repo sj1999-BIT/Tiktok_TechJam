@@ -4,7 +4,7 @@ def main():
     music_prompt = "Hype music, 2 mins long, first min slow, last min increasingly fast"
     tags =["electric", "jazz"]
     song_title = ["first_try"]
-    out_path = "./new_music"
+    out_path = "./output_music_generated"
     generate_songs(music_prompt, tags=tags, title=song_title, target_music_folder_path=out_path)
 
 
