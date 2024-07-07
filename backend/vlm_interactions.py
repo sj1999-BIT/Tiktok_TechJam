@@ -5,7 +5,7 @@ import torch
 from PIL import Image
 from transformers import pipeline
 from tqdm import tqdm
-from utils import convert_mp4_to_avi, get_filename_no_suffix, clear_text_in_file, summarise_file
+from backend.utils import convert_mp4_to_avi, get_filename_no_suffix, clear_text_in_file, summarise_file
 from transformers import TrOCRProcessor, VisionEncoderDecoderModel
 
 INVALID_ERROR_MESSAGE="INVALID MODEL SELECTED"
@@ -37,7 +37,12 @@ def generate_text(pil_image, model_name="captioner"):
 
 
 def extract_frames_and_generate_text(video_path, model_name="captioner"):
+    """
 
+    :param video_path:
+    :param model_name:
+    :return:
+    """
     # convert video to avi format
     avi_video_path = convert_mp4_to_avi(video_path)
 
@@ -58,6 +63,9 @@ def extract_frames_and_generate_text(video_path, model_name="captioner"):
     clear_text_in_file(output_file)
 
     frame_count = 0
+
+    # create a dataset to be passed into the pipeline
+    pil_img_dataset = []
 
     with open(output_file, 'w') as f:
 
@@ -86,12 +94,14 @@ def extract_frames_and_generate_text(video_path, model_name="captioner"):
 
             frame_count += 1
 
+
+
     # Release the video capture object
     video.release()
 
     # remove duplicates to reduce token length
     summarise_file(output_file)
-    
+
     return output_file
 
 
@@ -99,7 +109,7 @@ def extract_frames_and_generate_text(video_path, model_name="captioner"):
 if __name__=="__main__":
 
     # Path to your video
-    input_video_path = "input_video/fight_video.mp4"
+    input_video_path = "../past examples/fighting/fight_video.mp4"
 
     # Extract frames and generate captions
     output_file = extract_frames_and_generate_text(input_video_path, model_name="captioner")

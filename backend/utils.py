@@ -2,6 +2,19 @@ import os
 import shutil
 import imageio
 
+from mutagen.mp3 import MP3
+
+
+def remove_short_mp3_files(folder_path):
+    for filename in os.listdir(folder_path):
+        if filename.lower().endswith(".mp3"):
+            mp3_path = os.path.join(folder_path, filename)
+            audio = MP3(mp3_path)
+            duration_seconds = int(audio.info.length)
+            if duration_seconds < 60:
+                os.remove(mp3_path)
+                print(f"Removed {filename} (duration: {duration_seconds} seconds)")
+
 
 def get_filename_no_suffix(filepath):
     """
@@ -109,4 +122,4 @@ def summarise_file(txt_filepath):
         outfile.writelines(new_lines)
 
 if __name__=="__main__":
-    summarise_file("output/captioner_fight_video.txt")
+    remove_short_mp3_files("output_music_generated")
