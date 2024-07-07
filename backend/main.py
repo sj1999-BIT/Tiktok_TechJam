@@ -20,6 +20,9 @@ def run(input_video_path, user_prompt):
 
 
 if __name__ == "__main__":
-    test_video_filepath = "input_video/food_video.mp4"
-    user_prompt="I want a background music that is upbeating, delightful, make me feel appetising."
+    test_video_filepath = "input_video/fight_video.mp4"
+    user_prompt = "Dramatic kungfu music, emphasis on fight to the death"
+
+    # # food example
+    # user_prompt="I want a background music that is upbeating, delightful, make me feel appetising."
     run(test_video_filepath, user_prompt)

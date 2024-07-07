@@ -24,8 +24,8 @@ CAPTIONER = pipeline("image-to-text", model="Salesforce/blip-image-captioning-ba
 
 def generate_text(pil_image, model_name="captioner"):
     if model_name == "captioner":
-        generated_text = CAPTIONER(pil_image, max_new_tokens=MAX_TOKEN_LENGTH)[0]['generated_text']
-        return generated_text
+        generated_text_arr = CAPTIONER(pil_image, max_new_tokens=MAX_TOKEN_LENGTH)
+        return generated_text_arr
     elif model_name == "OCR":
         # Prepare image for the model
         pixel_values = PROCESSOR(images=pil_image, return_tensors="pt").pixel_values.to(DEVICE)
@@ -67,34 +67,42 @@ def extract_frames_and_generate_text(video_path, model_name="captioner"):
     # create a dataset to be passed into the pipeline
     pil_img_dataset = []
 
+    # go through the video, extract sparse frames, process into PIL for pipeline
+    for _ in tqdm(range(total_frames), desc="Processing frames"):
+        ret, frame = video.read()
+        if not ret:
+            break
+
+        if frame_count % 10 == 0:  # Process every 10th frame
+            # Convert frame to RGB (captioner expects RGB)
+            rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+
+            # captioner can only take in PIL image
+            pil_image = Image.fromarray(rgb_frame)
+            pil_img_dataset.append(pil_image)
+
+
+        frame_count += 1
+
+
+    # Generate caption with specific model over all frames
+    # each element is a dictionary, with one key: generated_text
+    caption_dict_arr = generate_text(pil_img_dataset, model_name=model_name)
+
+    # write all frames into a file
     with open(output_file, 'w') as f:
+        for cur_frame in tqdm(range(len(caption_dict_arr)), desc="VLM convert frame to text"):
 
-        for _ in tqdm(range(total_frames), desc="Processing frames"):
-            ret, frame = video.read()
-            if not ret:
+            # get the content from each output
+            caption = caption_dict_arr[cur_frame][0]['generated_text']
+            print(caption)
+
+            # stop if invalid model is used
+            if caption == INVALID_ERROR_MESSAGE:
+                print(INVALID_ERROR_MESSAGE)
                 break
-
-            if frame_count % 10 == 0:  # Process every 10th frame
-                # Convert frame to RGB (captioner expects RGB)
-                rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-
-                # captioner can only take in PIL image
-                pil_image = Image.fromarray(rgb_frame)
-
-                # Generate caption with specific model
-                caption = generate_text(pil_image, model_name=model_name)
-
-                # stop if invalid model is used
-                if caption == INVALID_ERROR_MESSAGE:
-                    print(INVALID_ERROR_MESSAGE)
-                    break
-
-                # Write to file
-                f.write(f"Frame {frame_count}: {caption}\n")
-
-            frame_count += 1
-
-
+            # Write to file
+            f.write(f"Frame {cur_frame * 10}: {caption}\n")
 
     # Release the video capture object
     video.release()
