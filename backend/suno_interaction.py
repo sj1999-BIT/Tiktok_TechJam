@@ -22,7 +22,7 @@ def generate_songs(input_prompt, tags=None, title=None, make_instrumental=True, 
     """
 
     clips = client.generate(
-        prompt=input_prompt,
+        prompt=input_prompt[:200],
         tags=tags,
         title=title,
         make_instrumental=make_instrumental,
@@ -51,6 +51,8 @@ def generate_songs(input_prompt, tags=None, title=None, make_instrumental=True, 
         remove_short_mp3_files(target_music_folder_path)
 
         print(f"Song downloaded to: {file_path}")
+
+    return file_path
 
 
 
