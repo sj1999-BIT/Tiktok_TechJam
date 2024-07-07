@@ -21,7 +21,7 @@ def run(input_video_path, user_prompt):
 
 if __name__ == "__main__":
     test_video_filepath = "input_video/fight_video.mp4"
-    user_prompt = "Dramatic kungfu music, emphasis on fight to the death"
+    user_prompt = "Dramatic kungfu music, emphasis on fight to the death, more intense, more chinese"
 
     # # food example
     # user_prompt="I want a background music that is upbeating, delightful, make me feel appetising."

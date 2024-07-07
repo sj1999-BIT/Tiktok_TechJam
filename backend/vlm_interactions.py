@@ -87,6 +87,7 @@ def extract_frames_and_generate_text(video_path, model_name="captioner"):
 
     # Generate caption with specific model over all frames
     # each element is a dictionary, with one key: generated_text
+    print("converting video to text, this will take up to a few minutes")
     caption_dict_arr = generate_text(pil_img_dataset, model_name=model_name)
 
     # write all frames into a file
