@@ -86,3 +86,27 @@ def clear_text_in_file(file_path):
         print(f"File '{file_path}' has been cleared.")
     else:
         print(f"File '{file_path}' does not exist.")
+
+def summarise_file(txt_filepath):
+
+    cur_line = ""
+    new_lines = []
+
+    with open(txt_filepath, 'r') as infile:
+        lines = infile.readlines()
+        original_size = len(lines)
+        for line in lines:
+            desc = line.split(":")[1]
+            if desc != cur_line:
+                # Not a duplicate, add to new_lines
+                new_lines.append(line)
+                cur_line = desc
+        new_size = len(new_lines)
+
+        print(f"output caption compressed from {original_size} lines to {new_size} lines")
+
+    with open(txt_filepath, 'w') as outfile:
+        outfile.writelines(new_lines)
+
+if __name__=="__main__":
+    summarise_file("output/captioner_fight_video.txt")

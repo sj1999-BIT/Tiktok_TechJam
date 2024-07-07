@@ -1,10 +1,6 @@
 Frame 0: a black background with a white and red flower
-Frame 10: a black background with a white and red flower
 Frame 20: a man in a blue shirt looking at another man in a black shirt
 Frame 30: a man in a blue shirt looking at another man
-Frame 40: a man in a blue shirt looking at another man
-Frame 50: a man in a blue shirt looking at another man
-Frame 60: a man in a blue shirt looking at another man
 Frame 70: two men standing next to each other man
 Frame 80: a man in a black shirt and a man in a blue shirt
 Frame 90: a man and woman standing on a street at night
@@ -33,8 +29,6 @@ Frame 310: a man is running across the street in the rain
 Frame 320: a man is walking down the street at night
 Frame 330: a man is running down the street in the rain
 Frame 340: a person walking down the street at night
-Frame 350: a person walking down the street at night
-Frame 360: a person walking down the street at night
 Frame 370: a person is walking down the street at night
 Frame 380: a man in a suit and tie walking down the street
 Frame 390: a man in a black jacket is walking down the street
@@ -56,8 +50,6 @@ Frame 540: a man is standing next to a truck
 Frame 550: a man standing next to a truck on a street
 Frame 560: a young boy pointing at the camera
 Frame 570: a man in a black jacket pointing at the camera
-Frame 580: a man in a black jacket pointing at the camera
-Frame 590: a man in a black jacket pointing at the camera
 Frame 600: a man in a blue jacket is standing in front of a truck
 Frame 610: a man in a blue jacket is pointing at something
 Frame 620: a man in a blue shirt is sitting in a car
@@ -65,8 +57,6 @@ Frame 630: a man in a blue shirt is talking on a cell
 Frame 640: a man in a blue jacket is holding his hand up
 Frame 650: a man in a car with his hand up
 Frame 660: a man in a black jacket pointing at the camera
-Frame 670: a man in a black jacket pointing at the camera
-Frame 680: a man in a black jacket pointing at the camera
 Frame 690: a man in a black shirt is running down the street
 Frame 700: a man in a black jacket is walking down the street
 Frame 710: a man is running across the street in front of a truck
@@ -90,7 +80,6 @@ Frame 880: a man is dancing on the street at night
 Frame 890: a man is walking down the street at night
 Frame 900: a man in a blue jacket pointing at something
 Frame 910: a man in a blue shirt pointing at something
-Frame 920: a man in a blue shirt pointing at something
 Frame 930: a man in a blue shirt is pointing at something
 Frame 940: a man is running across the street at night
 Frame 950: a man in a black jacket and jeans is dancing
@@ -102,7 +91,6 @@ Frame 1000: a man is walking across the street in the rain
 Frame 1010: a man is seen in the middle of a car
 Frame 1020: two people are standing in the rain
 Frame 1030: a man is running across the street in the dark
-Frame 1040: a man is running across the street in the dark
 Frame 1050: a man is running across the street in a dark city
 Frame 1060: a man is running across a street in the dark
 Frame 1070: a man running across a street in the dark
@@ -118,12 +106,10 @@ Frame 1160: a woman is dancing in the street at night
 Frame 1170: a man in a car with his hands up
 Frame 1180: a man is standing next to a truck
 Frame 1190: a man is standing next to a white truck
-Frame 1200: a man is standing next to a white truck
 Frame 1210: a man is standing next to a truck
 Frame 1220: a man in a black shirt is dancing
 Frame 1230: a man in a suit is standing next to a woman
 Frame 1240: a man in a suit is dancing on the street
-Frame 1250: a man in a suit is dancing on the street
 Frame 1260: a man in a white shirt is dancing
 Frame 1270: a man in a suit is walking down the street
 Frame 1280: a man is being pulled by a woman in the street
@@ -148,7 +134,6 @@ Frame 1460: a person is walking on the street with their feet
 Frame 1470: a man is standing next to a car
 Frame 1480: a man standing next to a car with the hood open
 Frame 1490: a man is standing under a car
-Frame 1500: a man is standing under a car
 Frame 1510: a man is holding onto a car
 Frame 1520: a man is holding a gun in his hand
 Frame 1530: a man in a blue jacket is holding a gun
@@ -202,7 +187,6 @@ Frame 2000: a man with his hand on his face
 Frame 2010: a man in a black jacket is looking at something
 Frame 2020: a man in a blue shirt is looking at something
 Frame 2030: a man in a blue jacket is standing on a train track
-Frame 2040: a man in a blue jacket is standing on a train track
 Frame 2050: a man in a blue jacket is looking at something
 Frame 2060: a man in a black jacket and a man in a blue shirt
 Frame 2070: a man in a blue jacket is dancing
@@ -212,7 +196,6 @@ Frame 2100: a man is laying down on the ground
 Frame 2110: a man pointing at another man in the street
 Frame 2120: a man holding a gun in the air
 Frame 2130: a man is holding a woman in the street
-Frame 2140: a man is holding a woman in the street
 Frame 2150: a man is holding another man in the street
 Frame 2160: two men in suits are fighting in the street
 Frame 2170: a man and woman standing on a street
@@ -260,26 +243,21 @@ Frame 2580: a man in a black jacket is holding a knife
 Frame 2590: a man in a black shirt and a man in a blue shirt
 Frame 2600: a man in a black jacket is punching another man
 Frame 2610: a man walking down a street at night
-Frame 2620: a man walking down a street at night
 Frame 2630: a person walking down a street at night
 Frame 2640: watch the dark knight online
 Frame 2650: a woman is dancing in the dark
-Frame 2660: a woman is dancing in the dark
 Frame 2670: a woman in a black dress dancing on a street
 Frame 2680: a man in a black suit is dancing
 Frame 2690: a man in a black suit is dancing on a stage
 Frame 2700: a man in a black jacket is dancing on the street
 Frame 2710: a man is riding a horse in the street
 Frame 2720: a man is doing a trick on the street
-Frame 2730: a man is doing a trick on the street
 Frame 2740: a man in a suit is standing on the ground
 Frame 2750: a man kneeling on the ground in the dark
 Frame 2760: a man laying on the ground with his head down
 Frame 2770: a man with a gun in his hand
 Frame 2780: a man with a knife in his hand
 Frame 2790: a man in a black shirt is holding a knife
-Frame 2800: a man in a black shirt is holding a knife
-Frame 2810: a man in a black shirt is holding a knife
 Frame 2820: a man with a black shirt and a black shirt
 Frame 2830: a man in a black jacket is laying on the ground
 Frame 2840: a man in a black jacket is doing a handstant
@@ -287,7 +265,6 @@ Frame 2850: a man in a black jacket is doing a trick
 Frame 2860: a man is doing a trick on the ground
 Frame 2870: a man is kneeling on the ground in the dark
 Frame 2880: a man kneeling on the ground in the dark
-Frame 2890: a man kneeling on the ground in the dark
 Frame 2900: a man in a blue jacket is standing on a street
 Frame 2910: a person walking down a street with their feet in the rain
 Frame 2920: a man is standing in the rain with his head down
@@ -302,7 +279,6 @@ Frame 3000: a man in a black jacket is holding a white object
 Frame 3010: a man in a black jacket is holding a knife
 Frame 3020: a man in a suit is holding his hands up
 Frame 3030: a man in a black jacket is holding a knife
-Frame 3040: a man in a black jacket is holding a knife
 Frame 3050: a man in a blue shirt is holding a knife
 Frame 3060: a man in a black jacket is holding a knife
 Frame 3070: a man in a black jacket is dancing
@@ -319,8 +295,6 @@ Frame 3170: a man is walking across the street at night
 Frame 3180: a man walking down a street at night
 Frame 3190: a man walking down the street at night
 Frame 3200: a man is walking down the street at night
-Frame 3210: a man is walking down the street at night
-Frame 3220: a man is walking down the street at night
 Frame 3230: a person riding a skateboard down a street
 Frame 3240: a person is walking down the street at night
 Frame 3250: a man is walking down the street at night
@@ -329,8 +303,6 @@ Frame 3270: a man is walking down the street at night
 Frame 3280: a person riding a skateboard down a street
 Frame 3290: a man is kneeling on the side of a road
 Frame 3300: a man is walking down the street at night
-Frame 3310: a man is walking down the street at night
-Frame 3320: a man is walking down the street at night
 Frame 3330: a man kneeling on the side of a road
 Frame 3340: a man is running down the street at night
 Frame 3350: a person is walking down the street at night
@@ -389,9 +361,6 @@ Frame 3870: a man is walking on a sidewalk with a skateboard
 Frame 3880: a man holding a knife in the air
 Frame 3890: a man holding a bat in the dark
 Frame 3900: a truck driving down a street at night
-Frame 3910: a truck driving down a street at night
-Frame 3920: a truck driving down a street at night
-Frame 3930: a truck driving down a street at night
 Frame 3940: a truck is driving down the road at night
 Frame 3950: a car driving down a street at night
 Frame 3960: a car driving on a road at night
@@ -420,7 +389,6 @@ Frame 4180: a man is holding a pole in the street
 Frame 4190: a man is holding a gun in the street
 Frame 4200: a woman standing on a street corner holding a pole
 Frame 4210: a truck is driving down the street at night
-Frame 4220: a truck is driving down the street at night
 Frame 4230: a truck is driving down the road at night
 Frame 4240: a car is driving down the street at night
 Frame 4250: a car is driving down a street at night
@@ -446,7 +414,6 @@ Frame 4440: a man in a black jacket is standing in the dark
 Frame 4450: a man is standing in the street at night
 Frame 4460: a man in a black shirt is walking down the street
 Frame 4470: a man in a black jacket is walking down the street
-Frame 4480: a man in a black jacket is walking down the street
 Frame 4490: a man walking down the street at night
 Frame 4500: a man is walking down the street at night
 Frame 4510: a man in a black shirt is dancing
@@ -471,7 +438,6 @@ Frame 4690: a man in a black jacket is holding a gun
 Frame 4700: a man in a blue jacket is dancing
 Frame 4710: a man in a blue shirt is standing next to a truck
 Frame 4720: a man is dancing on the street with another man
-Frame 4730: a man is dancing on the street with another man
 Frame 4740: a man in a white shirt is holding a knife
 Frame 4750: a man in a suit is standing in the dark
 Frame 4760: a car driving down a city street at night
@@ -496,7 +462,6 @@ Frame 4940: a man with his mouth open in the dark
 Frame 4950: a man with a beard and a black shirt
 Frame 4960: a man in a black shirt is standing in front of a car
 Frame 4970: a man in a black jacket is standing in a dark room
-Frame 4980: a man in a black jacket is standing in a dark room
 Frame 4990: a man in a black jacket is standing in a room
 Frame 5000: a car is driving on a road with a tire
 Frame 5010: a man is standing in the middle of a street
@@ -505,10 +470,8 @@ Frame 5030: a man standing in the middle of a street
 Frame 5040: a woman walking down a street at night
 Frame 5050: a man in a black jacket is standing in the street
 Frame 5060: a man with a hoodie is looking at something
-Frame 5070: a man with a hoodie is looking at something
 Frame 5080: a man with a hoodie and a hoodie on his head
 Frame 5090: a man in a suit pointing his finger at the camera
-Frame 5100: a man in a suit pointing his finger at the camera
 Frame 5110: a person holding a finger in the middle of their finger
 Frame 5120: a man with a hoodie and a hoodie on his head
 Frame 5130: a man with a knife in his hand
@@ -541,13 +504,10 @@ Frame 5390: a man in a black shirt is screaming
 Frame 5400: a man with a black shirt and a black shirt
 Frame 5410: a man in a black shirt is holding a microphone
 Frame 5420: a man with a bloody face and black hair
-Frame 5430: a man with a bloody face and black hair
-Frame 5440: a man with a bloody face and black hair
 Frame 5450: a man in a black jacket is pointing his finger at the camera
 Frame 5460: a man in a black shirt is pointing his finger at the camera
 Frame 5470: a man in a black shirt is screaming
 Frame 5480: a man in a black shirt is holding a gun
-Frame 5490: a man in a black shirt is holding a gun
 Frame 5500: a man in a black jacket is dancing
 Frame 5510: the last of the mohich - official trailer
 Frame 5520: a man in a black jacket is holding a knife
@@ -566,12 +526,7 @@ Frame 5640: a man is laying on the ground in the dark
 Frame 5650: a man laying on the ground in the dark
 Frame 5660: a man is laying on the ground in the dark
 Frame 5670: a man laying on the ground in the dark
-Frame 5680: a man laying on the ground in the dark
-Frame 5690: a man laying on the ground in the dark
-Frame 5700: a man laying on the ground in the dark
 Frame 5710: a man in a black jacket is dancing
-Frame 5720: a man in a black jacket is dancing
-Frame 5730: a man in a black jacket is dancing
 Frame 5740: a man in a suit is running through the street
 Frame 5750: a man in a black jacket is holding a gun
 Frame 5760: a man with a gun in his hand
@@ -582,18 +537,11 @@ Frame 5800: a man is kneeling on the ground in the rain
 Frame 5810: a man kneeling on the ground in the rain
 Frame 5820: a man is kneeling on the ground in the rain
 Frame 5830: a man kneeling on the ground in the rain
-Frame 5840: a man kneeling on the ground in the rain
 Frame 5850: a person kneeling on the ground in the rain
 Frame 5860: a man kneeling on the ground in the rain
-Frame 5870: a man kneeling on the ground in the rain
 Frame 5880: a person kneeling on the ground in the rain
 Frame 5890: a man kneeling on the ground in the rain
-Frame 5900: a man kneeling on the ground in the rain
-Frame 5910: a man kneeling on the ground in the rain
-Frame 5920: a man kneeling on the ground in the rain
-Frame 5930: a man kneeling on the ground in the rain
 Frame 5940: a man in a black jacket is holding a gun
-Frame 5950: a man in a black jacket is holding a gun
 Frame 5960: a man in a black jacket is standing in front of a mirror
 Frame 5970: a man in a black jacket is standing in a dark room
 Frame 5980: a man in a black jacket is holding a gun
@@ -610,62 +558,3 @@ Frame 6080: a man in a black jacket is pointing his finger at the camera
 Frame 6090: a man in a black jacket pointing at the camera
 Frame 6100: a black and white photo of a person in the dark
 Frame 6110: a black background with a white and red flower
-Frame 6120: a black background with a white and red flower
-Frame 6130: a black background with a white and red flower
-Frame 6140: a black background with a white and red flower
-Frame 6150: a black background with a white and red flower
-Frame 6160: a black background with a white and red flower
-Frame 6170: a black background with a white and red flower
-Frame 6180: a black background with a white and red flower
-Frame 6190: a black background with a white and red flower
-Frame 6200: a black background with a white and red flower
-Frame 6210: a black background with a white and red flower
-Frame 6220: a black background with a white and red flower
-Frame 6230: a black background with a white and red flower
-Frame 6240: a black background with a white and red flower
-Frame 6250: a black background with a white and red flower
-Frame 6260: a black background with a white and red flower
-Frame 6270: a black background with a white and red flower
-Frame 6280: a black background with a white and red flower
-Frame 6290: a black background with a white and red flower
-Frame 6300: a black background with a white and red flower
-Frame 6310: a black background with a white and red flower
-Frame 6320: a black background with a white and red flower
-Frame 6330: a black background with a white and red flower
-Frame 6340: a black background with a white and red flower
-Frame 6350: a black background with a white and red flower
-Frame 6360: a black background with a white and red flower
-Frame 6370: a black background with a white and red flower
-Frame 6380: a black background with a white and red flower
-Frame 6390: a black background with a white and red flower
-Frame 6400: a black background with a white and red flower
-Frame 6410: a black background with a white and red flower
-Frame 6420: a black background with a white and red flower
-Frame 6430: a black background with a white and red flower
-Frame 6440: a black background with a white and red flower
-Frame 6450: a black background with a white and red flower
-Frame 6460: a black background with a white and red flower
-Frame 6470: a black background with a white and red flower
-Frame 6480: a black background with a white and red flower
-Frame 6490: a black background with a white and red flower
-Frame 6500: a black background with a white and red flower
-Frame 6510: a black background with a white and red flower
-Frame 6520: a black background with a white and red flower
-Frame 6530: a black background with a white and red flower
-Frame 6540: a black background with a white and red flower
-Frame 6550: a black background with a white and red flower
-Frame 6560: a black background with a white and red flower
-Frame 6570: a black background with a white and red flower
-Frame 6580: a black background with a white and red flower
-Frame 6590: a black background with a white and red flower
-Frame 6600: a black background with a white and red flower
-Frame 6610: a black background with a white and red flower
-Frame 6620: a black background with a white and red flower
-Frame 6630: a black background with a white and red flower
-Frame 6640: a black background with a white and red flower
-Frame 6650: a black background with a white and red flower
-Frame 6660: a black background with a white and red flower
-Frame 6670: a black background with a white and red flower
-Frame 6680: a black background with a white and red flower
-Frame 6690: a black background with a white and red flower
-Frame 6700: a black background with a white and red flower

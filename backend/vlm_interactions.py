@@ -5,7 +5,7 @@ import torch
 from PIL import Image
 from transformers import pipeline
 from tqdm import tqdm
-from utils import convert_mp4_to_avi, get_filename_no_suffix, clear_text_in_file
+from utils import convert_mp4_to_avi, get_filename_no_suffix, clear_text_in_file, summarise_file
 from transformers import TrOCRProcessor, VisionEncoderDecoderModel
 
 INVALID_ERROR_MESSAGE="INVALID MODEL SELECTED"
@@ -53,7 +53,7 @@ def extract_frames_and_generate_text(video_path, model_name="captioner"):
     video_name = get_filename_no_suffix(avi_video_path)
 
     # Create output text file
-    output_file = f"{model_name}_{video_name}.txt"
+    output_file = os.path.join("output", f"{model_name}_{video_name}.txt")
 
     clear_text_in_file(output_file)
 
@@ -88,8 +88,11 @@ def extract_frames_and_generate_text(video_path, model_name="captioner"):
 
     # Release the video capture object
     video.release()
-    return output_file
 
+    # remove duplicates to reduce token length
+    summarise_file(output_file)
+    
+    return output_file
 
 
 
@@ -101,4 +104,5 @@ if __name__=="__main__":
     # Extract frames and generate captions
     output_file = extract_frames_and_generate_text(input_video_path, model_name="captioner")
 
-    print(f"Captions have been written to {output_file}")
+    # print(f"Captions have been written to {output_file}")
+
