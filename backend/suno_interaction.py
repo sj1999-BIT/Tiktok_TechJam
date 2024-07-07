@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from utils import clear_folder
+from backend.utils import clear_folder, remove_short_mp3_files
 
 load_dotenv()
 
@@ -8,15 +8,6 @@ from suno import Suno, ModelVersions
 client = Suno(
   cookie=os.getenv('SUNO_COOKIE'),
   model_version=ModelVersions.CHIRP_V3_5)
-
-# class SunoServiceHandler:
-#     def __init__(self):
-#         self.api_url = "https://api-inference.huggingface.co/models/meta-llama/Meta-Llama-3-8B-Instruct"
-#         # self.headers = {"Authorization": f"Bearer {os.getenv('HF_TOKEN')}"}
-#         self.headers = {"Authorization": f"Bearer {os.getenv('HF_TOKEN')}"}
-
-
-
 
 def generate_songs(input_prompt, tags=None, title=None, make_instrumental=True, target_music_folder_path=None):
     """
@@ -53,6 +44,11 @@ def generate_songs(input_prompt, tags=None, title=None, make_instrumental=True, 
             file_path = client.download(song=song, path=target_music_folder_path)
         else:
             file_path = client.download(song=song)
+
+        from mutagen.mp3 import MP3
+
+        # remove music that are too shot
+        remove_short_mp3_files(target_music_folder_path)
 
         print(f"Song downloaded to: {file_path}")
 

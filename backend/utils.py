@@ -2,6 +2,19 @@ import os
 import shutil
 import imageio
 
+from mutagen.mp3 import MP3
+
+
+def remove_short_mp3_files(folder_path):
+    for filename in os.listdir(folder_path):
+        if filename.lower().endswith(".mp3"):
+            mp3_path = os.path.join(folder_path, filename)
+            audio = MP3(mp3_path)
+            duration_seconds = int(audio.info.length)
+            if duration_seconds < 60:
+                os.remove(mp3_path)
+                print(f"Removed {filename} (duration: {duration_seconds} seconds)")
+
 
 def get_filename_no_suffix(filepath):
     """
@@ -86,3 +99,27 @@ def clear_text_in_file(file_path):
         print(f"File '{file_path}' has been cleared.")
     else:
         print(f"File '{file_path}' does not exist.")
+
+def summarise_file(txt_filepath):
+
+    cur_line = ""
+    new_lines = []
+
+    with open(txt_filepath, 'r') as infile:
+        lines = infile.readlines()
+        original_size = len(lines)
+        for line in lines:
+            desc = line.split(":")[1]
+            if desc != cur_line:
+                # Not a duplicate, add to new_lines
+                new_lines.append(line)
+                cur_line = desc
+        new_size = len(new_lines)
+
+        print(f"output caption compressed from {original_size} lines to {new_size} lines")
+
+    with open(txt_filepath, 'w') as outfile:
+        outfile.writelines(new_lines)
+
+if __name__=="__main__":
+    remove_short_mp3_files("output_music_generated")
