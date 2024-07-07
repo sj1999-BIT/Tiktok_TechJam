@@ -6,10 +6,12 @@ Follow these steps to get the Suno API up and running on your local machine:
 1. **setup environment**
    1. pip install python-dotenv
    2. pip install SunoAI
-   3. 
-2. **use suno ai** 
+2. **use hugging face captioner**
+   1. `extract_frames_and_generate_text` Function
+      This funciton uses pipeline from huggingFace to generate text description of a video by looking
+      at it once every 10 frame.
+3. **use suno ai** 
    2. `generate_songs` Function
-
       This function generates songs using the Suno API based on given parameters and downloads them.
 
 ### Function Signature
