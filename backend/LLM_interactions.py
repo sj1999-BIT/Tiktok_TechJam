@@ -25,7 +25,7 @@ def generate_suno_prompt(video_vlm_txt_filepath, user_prompt):
                  f"Generate with following format:" \
                  f" music prompt: describe the music, pacing and instruments used, under 200 characters" \
                  f" tags for the music: [ in format [x, y, ]]," \
-                 f" duration of music: single int value," \
+                 f" duration of music: single int value, must be between 10 to 240 seconds" \
                  f" which frame music start: single int value." \
                  f"No need detail explanation"
 
@@ -40,7 +40,7 @@ def generate_suno_prompt(video_vlm_txt_filepath, user_prompt):
 
     print(f"LLM response: {LLM_response_content}")
 
-    output_filpath = "output/suno_summary.txt"
+    output_filpath = os.path.join(os.path.dirname(video_vlm_txt_filepath), "suno_summary.txt")
     with open(output_filpath, 'w') as outfile:
         outfile.writelines(LLM_response_content)
 

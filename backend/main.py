@@ -15,13 +15,13 @@ def run(input_video_path, user_prompt):
     # tags =["electric", "jazz"]
     # song_title = ["first_try"]
     out_path = "./output_music_generated"
-    generate_songs(music_prompt, tags=tags, target_music_folder_path=out_path)
+    return generate_songs(music_prompt, tags=tags, target_music_folder_path=out_path)
 
 
 
 if __name__ == "__main__":
     test_video_filepath = "input_video/fight_video.mp4"
-    user_prompt = "Dramatic kungfu music, emphasis on fight to the death"
+    user_prompt = "Dramatic kungfu music, emphasis on fight to the death, more intense, more chinese"
 
     # # food example
     # user_prompt="I want a background music that is upbeating, delightful, make me feel appetising."

@@ -10,6 +10,8 @@ from transformers import TrOCRProcessor, VisionEncoderDecoderModel
 
 INVALID_ERROR_MESSAGE="INVALID MODEL SELECTED"
 MAX_TOKEN_LENGTH = 100
+MAX_FRAMES_TO_TEXT = 200
+MIN_INTERVAL = 10
 
 # Load the TrOCR model and processor
 
@@ -58,7 +60,9 @@ def extract_frames_and_generate_text(video_path, model_name="captioner"):
     video_name = get_filename_no_suffix(avi_video_path)
 
     # Create output text file
-    output_file = os.path.join("output", f"{model_name}_{video_name}.txt")
+    output_file = os.path.join( os.path.dirname(avi_video_path), f"{model_name}_{video_name}.txt")
+
+    interval = max(int(total_frames / MAX_FRAMES_TO_TEXT), MIN_INTERVAL)
 
     clear_text_in_file(output_file)
 
@@ -73,7 +77,7 @@ def extract_frames_and_generate_text(video_path, model_name="captioner"):
         if not ret:
             break
 
-        if frame_count % 10 == 0:  # Process every 10th frame
+        if frame_count % interval == 0:  # Process every 10th frame
             # Convert frame to RGB (captioner expects RGB)
             rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
@@ -87,6 +91,7 @@ def extract_frames_and_generate_text(video_path, model_name="captioner"):
 
     # Generate caption with specific model over all frames
     # each element is a dictionary, with one key: generated_text
+    print("converting video to text, this will take up to a few minutes")
     caption_dict_arr = generate_text(pil_img_dataset, model_name=model_name)
 
     # write all frames into a file
@@ -102,7 +107,7 @@ def extract_frames_and_generate_text(video_path, model_name="captioner"):
                 print(INVALID_ERROR_MESSAGE)
                 break
             # Write to file
-            f.write(f"Frame {cur_frame * 10}: {caption}\n")
+            f.write(f"Frame {cur_frame * interval}: {caption}\n")
 
     # Release the video capture object
     video.release()

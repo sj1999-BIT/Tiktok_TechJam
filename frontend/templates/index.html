@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AI-tonal</title>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	<meta name="viewport" content="width=device-width" />
+	<meta name="generator" content={Astro.generator}>
+
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+	<label for="video" style="font-size:xx-large;">AI-tonal</label>
+	<div style="width:100%">
+		<form action="http://localhost:5000/"
+			  method="post"
+			  enctype="multipart/form-data"
+			  id="videForm">
+
+			<div style="width:100%">
+				<label for="video" style="font-size:large;">video</label>
+
+				<input style="border-width:10px; border-color:black;" type="file" name="video" id="fileInput" accept="video/*" />
+			</div>
+
+			<div style="width:100%">
+				<label for="user-prompt" style="font-size:large;">user intent </label>
+			</div>
+			<input type="text" style="width: 50%; height: 50vh" id="user-prompt" name="widthDiv" class="reqd">
+			<div style="width: 100%; margin-top: 10vh;">
+				<button style="background-color: deepskyblue; width: 25%" id="submission-butn">Submit</button>
+			</div>
+		</form>
+	<!--		<video controls class="aspect-video w-full" id="videoEl">
+				your browser does not support the video tag
+			</video>-->
+	</div>
+</body>
+</html>
+
+<script>
+	const videoEL = document.getElementById('videoEl');
+	const fileInput = document.getElementById('fileInput');
+    const videoForm = document.getElementById('videForm');
+    const button = document.getElementById('submission-butn');
+
+
+    button.addEventListener('click', (event) => {
+        if (validForm()) {
+            console.log("submitting video");
+            // Change button color to green
+            button.style.backgroundColor = 'green';
+
+            // Create and display status message
+            let statusMessage = document.createElement('p');
+            statusMessage.textContent = "Inputs submitted, music file will take up to 5 mins to generate";
+            statusMessage.style.fontSize = 'small';
+            button.parentNode.insertBefore(statusMessage, button.nextSibling);
+
+            fetch(videoForm.action, {
+                method: 'POST',
+                body: new FormData(videoForm),
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.blob();
+            })
+            .then(blob => {
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.style.display = 'none';
+                a.href = url;
+                a.download = 'audio.mp3';
+                document.body.appendChild(a);
+                a.click();
+                window.URL.revokeObjectURL(url);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+
+        } else {
+            console.log("not all fields occupied");
+            event.preventDefault();
+        }
+    })
+
+    videoForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+    })
+
+	fileInput.addEventListener('change', (event) => {
+		if (event?.target?.files && event.target.files[0]) {
+			console.log("video loading");
+			videoEL.src = URL.createObjectURL(event.target.files[0]);
+			videoEL.load();
+
+		}
+	})
+
+    // make sure all dimensions are not left empty
+    function validForm() {
+        var allGood = true;
+        var allTags = document.getElementsByTagName("*");
+
+        for (var i = 0; i < allTags.length; i++) {
+            if (!validTag(allTags[i])) {
+                allGood = false;
+            }
+        }
+        return allGood;
+
+        function validTag(thisTag) {
+            var outClass = "";
+            var allClasses = thisTag.className.split(" ");
+
+            for (var j = 0; j < allClasses.length; j++) {
+                outClass += validBasedOnClass(allClasses[j]) + " ";
+            }
+
+            thisTag.className = outClass;
+
+            if (outClass.indexOf("invalid") > -1) {
+                thisTag.focus();
+                if (thisTag.nodeName == "INPUT") {
+                    thisTag.select();
+                }
+                return false;
+            }
+            return true;
+
+            function validBasedOnClass(thisClass) {
+                var classBack = "";
+
+                switch (thisClass) {
+                    case "":
+                    case "invalid":
+                        break;
+                    case "reqd":
+                        if (allGood && thisTag.value == "") {
+                            classBack = "invalid ";
+                        }
+                        classBack += thisClass;
+                        break;
+                    default:
+                        classBack += thisClass;
+                }
+                return classBack;
+            }
+        }
+    }
+
+</script>
