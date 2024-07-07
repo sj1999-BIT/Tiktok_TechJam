@@ -1,0 +1,202 @@
+Frame 0: 0 0
+Frame 10: 0 0
+Frame 20: 2th
+Frame 30: 2nd
+Frame 40: 2 References
+Frame 50: 2nd sp
+Frame 60: 2nd sp
+Frame 70: spoken
+Frame 80: spouse.
+Frame 90: spy
+Frame 100: 25th
+Frame 110: siti
+Frame 120: spoken
+Frame 130: 2.
+Frame 140: full.
+Frame 150: the
+Frame 160: 0 1
+Frame 170: the
+Frame 180: Print export
+Frame 190: three.
+Frame 200: spots
+Frame 210: after
+Frame 220: Print export
+Frame 230: Print export
+Frame 240: 2nd leg
+Frame 250: 0
+Frame 260: 2 1
+Frame 270: to obtain
+Frame 280: spy
+Frame 290: Jump to
+Frame 300: 2 1
+Frame 310: 0 1
+Frame 320: 0 1
+Frame 330: 0 0
+Frame 340: spoken
+Frame 350: for the
+Frame 360: 0 1
+Frame 370: 2 1
+Frame 380: offrey
+Frame 390: top
+Frame 400: 1st
+Frame 410: women's
+Frame 420: this time
+Frame 430: newcastle.
+Frame 440: passes
+Frame 450: youngly
+Frame 460: spy
+Frame 470: sister
+Frame 480: 0 1
+Frame 490: 0 2
+Frame 500: 0 1
+Frame 510: 0 2
+Frame 520: 0 1
+Frame 530: 0 2
+Frame 540: spoken
+Frame 550: 0 1
+Frame 560: 2 1
+Frame 570: 2 1
+Frame 580: 2 1
+Frame 590: 2 1
+Frame 600: 1st
+Frame 610: 0 1
+Frame 620: 0 1
+Frame 630: 0 1
+Frame 640: Set
+Frame 650: Set
+Frame 660: 2 2
+Frame 670: 2 2
+Frame 680: 2 2
+Frame 690: 2.
+Frame 700: 0 1
+Frame 710: 2 1
+Frame 720: to the
+Frame 730: to other places
+Frame 740: 4 References
+Frame 750: 0 1
+Frame 760: left
+Frame 770: 2 months
+Frame 780: 2 1
+Frame 790: 2 1
+Frame 800: a b
+Frame 810: 2nd
+Frame 820: to
+Frame 830: spoken
+Frame 840: 0 1
+Frame 850: spaper
+Frame 860: Jump to
+Frame 870: 4 References
+Frame 880: 0 1
+Frame 890: Curryhead
+Frame 900: spoken
+Frame 910: 2nd sp
+Frame 920: 2 References
+Frame 930: 2nd leg
+Frame 940: 0 2
+Frame 950: spoken people
+Frame 960: spyled days
+Frame 970: 0 1
+Frame 980: 0 0
+Frame 990: 0 0
+Frame 1000: 0 0
+Frame 1010: 0 0
+Frame 1020: CRS D.
+Frame 1030: 0 1
+Frame 1040: 0 1.
+Frame 1050: 0 1
+Frame 1060: 0 2
+Frame 1070: 2 2
+Frame 1080: 2 1
+Frame 1090: 0 1
+Frame 1100: 0 1
+Frame 1110: to
+Frame 1120: 0 1
+Frame 1130: 0 1
+Frame 1140: 0 1
+Frame 1150: 0 1
+Frame 1160: will be
+Frame 1170: 7th.
+Frame 1180: 7th
+Frame 1190: 0 1
+Frame 1200: 0 1
+Frame 1210: 0 1
+Frame 1220: 0 1
+Frame 1230: 0 1
+Frame 1240: 0 0
+Frame 1250: 0 1
+Frame 1260: 2.th
+Frame 1270: 2 References
+Frame 1280: 0 1
+Frame 1290: 0 1
+Frame 1300: 0 1
+Frame 1310: 0 1
+Frame 1320: 0 1
+Frame 1330: 0
+Frame 1340: 0 1
+Frame 1350: up
+Frame 1360: spots
+Frame 1370: spy
+Frame 1380: 2 2
+Frame 1390: pick up
+Frame 1400: spy
+Frame 1410: spots.
+Frame 1420: 0 1
+Frame 1430: exnex
+Frame 1440: workership.
+Frame 1450: a view.
+Frame 1460: 2 1UP
+Frame 1470: 0 1
+Frame 1480: 1 1
+Frame 1490: 0 1
+Frame 1500: Print export
+Frame 1510: spots
+Frame 1520: 2nd leg
+Frame 1530: 7th
+Frame 1540: 0 0
+Frame 1550: 2nd
+Frame 1560: spots
+Frame 1570: 2 1
+Frame 1580: 0 1
+Frame 1590: 0 1 1
+Frame 1600: 0 1
+Frame 1610: a member
+Frame 1620: 1st
+Frame 1630: 0 1
+Frame 1640: s.
+Frame 1650: 0 1
+Frame 1660: 0 1
+Frame 1670: 0 1
+Frame 1680: 0 1
+Frame 1690: 0 1
+Frame 1700: to the
+Frame 1710: 0 0
+Frame 1720: to
+Frame 1730: returns
+Frame 1740: spoken.
+Frame 1750: spits
+Frame 1760: 1st century
+Frame 1770: 0 1
+Frame 1780: 0 1
+Frame 1790: 0 1
+Frame 1800: 1st century
+Frame 1810: 0 1
+Frame 1820: 0 1
+Frame 1830: 0.
+Frame 1840: Jump to search
+Frame 1850: will be
+Frame 1860: 0 1
+Frame 1870: 2 1
+Frame 1880: by them
+Frame 1890: spoken
+Frame 1900: 2 1
+Frame 1910: with
+Frame 1920: 0 1
+Frame 1930: 1st
+Frame 1940: 0 2
+Frame 1950: 0 1
+Frame 1960: 0 1
+Frame 1970: 2
+Frame 1980: 0 1
+Frame 1990: 2 1 Career.
+Frame 2000: 1st century
+Frame 2010: spoken
