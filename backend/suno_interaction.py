@@ -38,6 +38,8 @@ def generate_songs(input_prompt, tags=None, title=None, make_instrumental=True, 
     if os.path.exists(target_music_folder_path):
         clear_folder(target_music_folder_path)
 
+    print("\ndownloading the music from suno, will take sometime\n")
+
     # Download generated songs
     for song in clips:
         if target_music_folder_path is not None:
@@ -50,7 +52,7 @@ def generate_songs(input_prompt, tags=None, title=None, make_instrumental=True, 
         # remove music that are too shot
         remove_short_mp3_files(target_music_folder_path)
 
-        print(f"Song downloaded to: {file_path}")
+        print(f"Song downloaded to: {file_path}\n")
 
     return file_path
 

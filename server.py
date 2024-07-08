@@ -31,12 +31,12 @@ def home():
 @app.route('/', methods=['POST'])
 def get_seg_img():
     user_prompt = request.form.get('widthDiv')
-    video_path = "../backend/input_video/uploaded_video.mp4"
+    video_path = "backend/input_video/uploaded_video.mp4"
 
     print(f"user prompt is {user_prompt}")
 
     video_file = request.files['video']
-    video_file.save('../backend/input_video/uploaded_video.mp4')
+    video_file.save('backend/input_video/uploaded_video.mp4')
 
     filepath = run(video_path,  user_prompt)
 
