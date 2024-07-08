@@ -1,4 +1,8 @@
 # AI-Tonal
+
+A convenient tool that leverage the powerful capabilities of generative AI to generate
+custom background music for your video.
+
 link to example results: https://youtu.be/_dB75I2cq5A?si=9FwiUFB_BYadsQIT
 ## Quick Start
 
