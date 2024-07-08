@@ -1,4 +1,6 @@
-# Tiktok_TechJam
+# AI-Tonal
+A convenient tool that leverage the powerful capabilities of generative AI to generate
+custom background music for your video. 
 ## Quick Start
 
 Follow these steps to get the Suno API up and running on your local machine:
