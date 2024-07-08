@@ -96,6 +96,7 @@ def extract_frames_and_generate_text(video_path, model_name="captioner"):
 
     # write all frames into a file
     with open(output_file, 'w') as f:
+        print(f"store the video-text caption in {output_file}")
         for cur_frame in tqdm(range(len(caption_dict_arr)), desc="VLM convert frame to text"):
 
             # get the content from each output

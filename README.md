@@ -3,37 +3,21 @@
 
 Follow these steps to get the Suno API up and running on your local machine:
 
-1. **setup environment**
-   1. pip install python-dotenv
-   2. pip install SunoAI
-2. **use hugging face captioner**
-   1. `extract_frames_and_generate_text` Function
-      This funciton uses pipeline from huggingFace to generate text description of a video by looking
-      at it once every 10 frame.
-3. **use suno ai** 
-   2. `generate_songs` Function
-      This function generates songs using the Suno API based on given parameters and downloads them.
-
-### Function Signature
-
-```python
-def generate_songs(
-    input_prompt, 
-    tags=None, 
-    title=None, 
-    make_instrumental=True, 
-    target_music_folder_path=None
-):
-```
-
-### example
-```python
-from backend.suno_interaction import generate_songs
-if __name__ == "__main__":
-    music_prompt = "Hype music, 2 mins long, first min slow, last min increasingly fast"
-    tags =["electric", "jazz"]
-    song_title = ["first_try"]
-    out_path = "./new_music"
-    generate_songs(music_prompt, tags=tags, title=song_title, target_music_folder_path=out_path)
-```
-
+1. **prepare key to models**
+   1. in file `.env`, add in your own suno_cookie and openai-key
+   2. suno_cookie can be found using https://suno.gcui.art/
+      1. Copy the cookie to `.env` file in format `SUNO_COOKIE=<your cookie>`
+   3. openai-key can be found using https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key
+      1. Copy the cookie to `.env` file in format `OPENAI_KEY=<your key>`
+2. **setup environment**
+   1. `git clone https://github.com/sj1999-BIT/Tiktok_TechJam.git`
+   2. `conda env create -f environment.yml`
+   3.  `conda activate AI-Tonal`
+3. **run AI-Tonal locally**
+   1. command prompt go to the directory of the repo
+   2. `python server.py`
+   3. go to `localhost:5000`
+   4. Click `Choose File` to select your target video
+   5. Add in your user prompt
+   6. Click `submit`
+   7. It will take a few minutes, a mp3 file of the music will be `automatically downloaded`
